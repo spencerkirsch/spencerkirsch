@@ -417,12 +417,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 <li><a href="#design-constraints-1">Design Constraints</a></li>
 <li><a href="#setup-1">Setup</a></li>
 <li><a href="#results-1">Results</a></li>
-<li><a href="#figures-1">Figures</a>
-<ul>
-<li><a href="#stage-1--baseline-flow">Stage 1 — Baseline Flow</a></li>
-<li><a href="#stage-4--downstream-development">Stage 4 — Downstream Development</a></li>
-</ul>
-</li>
+<li><a href="#figures-1">Figures</a></li>
 </ul>
 </li>
 </ul>
@@ -447,7 +442,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 </li>
 </ul>
 </li>
-<li><a href="#contact-me">Contact Me!</a></li>
+<li><a href="#contact-me">Contact Me</a></li>
 </ul>
 <hr>
 <h1 id="computational-fluid-dynamics-projects">Computational Fluid Dynamics Projects</h1>
@@ -465,11 +460,11 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 <h3 id="results">Results</h3>
 <ul>
 <li>Oil outlet temperature reached 271°F, removing approximately 28 Btu/s of heat</li>
-<li>Increasing the tubing length by 1.5–2× would reduce oil outlet temperature to around 240°F whilst still maintaining compactness</li>
+<li>Increasing the tubing length by 1.5–2× would reduce oil outlet temperature to around 240°F while maintaining compactness</li>
 <li>Oil and Air pressure drop measured 5.5 psi and 0.18 psi respectively</li>
-<li>Flow fully developed in the exchanger with little backflow zones</li>
+<li>Flow fully developed across the exchanger with no significant recirculation zones</li>
 <li>Air outlet temperature reached about 139°F</li>
-<li>Compact form factor (18 × 10 × 22 in)</li>
+<li>Compact form factor (10 × 6 × 3 in) satisfied packaging limits while providing good scalability</li>
 </ul>
 <hr>
 <h3 id="figures">Figures</h3>
@@ -508,166 +503,41 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 <img src="ME407/CFD_HeatExchanger/OilOutletTemp.png" alt="Oil Outlet Temperature" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <figcaption style="text-align:center;">Oil outlet temperature distribution</figcaption>
 <hr>
-<h2 id="axial-air-compressor-for-turbofan-engine">Axial Air Compressor for Turbofan Engine</h2>
+<h2 id="axial-air-compressor">Axial Air Compressor</h2>
 <p>Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.<br>
 Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometry and validated at both altitude and sea-level conditions.</p>
 <h3 id="design-constraints">Design Constraints</h3>
 <ul>
-<li>Achieve 20:1 Pressure ratio</li>
-<li>Maximum Altitude of 40,000 ft</li>
-<li>Outer Diameter between 5 ft and 6 ft</li>
-<li>Maximum RPM of any stage less than 50,000 rpm</li>
+<li>Pressure ratio: 20 : 1</li>
+<li>Maximum RPM: 50,000</li>
+<li>Altitude: 40,000 ft</li>
+<li>Outer diameter: 5 – 6 ft</li>
 </ul>
-<h3 id="design-parameters">Design Parameters</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:center">Value</th>
-<th style="text-align:center">Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Rotational speed</td>
-<td style="text-align:center">2500</td>
-<td style="text-align:center">rpm</td>
-</tr>
-<tr>
-<td style="text-align:left">Outer Diameter</td>
-<td style="text-align:center">5.96</td>
-<td style="text-align:center">ft</td>
-</tr>
-<tr>
-<td style="text-align:left">Length</td>
-<td style="text-align:center">23.4</td>
-<td style="text-align:center">ft</td>
-</tr>
-<tr>
-<td style="text-align:left">Maximum blade length</td>
-<td style="text-align:center">25.8</td>
-<td style="text-align:center">in</td>
-</tr>
-<tr>
-<td style="text-align:left">Minimum blade length</td>
-<td style="text-align:center">3.2</td>
-<td style="text-align:center">in</td>
-</tr>
-<tr>
-<td style="text-align:left">Dry Mass</td>
-<td style="text-align:center">11000</td>
-<td style="text-align:center">lbm</td>
-</tr>
-<tr>
-<td style="text-align:left">Blade/Vane shape</td>
-<td style="text-align:center">NACA 9506</td>
-<td style="text-align:center">n/a</td>
-</tr>
-<tr>
-<td style="text-align:left">Power at 40k</td>
-<td style="text-align:center">1087</td>
-<td style="text-align:center">HP</td>
-</tr>
-<tr>
-<td style="text-align:left">Compression Ratio 40K</td>
-<td style="text-align:center">22</td>
-<td style="text-align:center">—</td>
-</tr>
-<tr>
-<td style="text-align:left">Power at STP</td>
-<td style="text-align:center">4902</td>
-<td style="text-align:center">HP</td>
-</tr>
-<tr>
-<td style="text-align:left">Compression Ratio STP</td>
-<td style="text-align:center">22</td>
-<td style="text-align:center">—</td>
-</tr>
-</tbody>
-</table>
-<h3 id="hand-calculations">Hand Calculations</h3>
-<p>alt text</p>
-<p>Stage-wise hand calculation to determine stage inlet &amp; outlet area and angles of attack for rotors &amp; stators required to meet the design criteria.</p>
-<h3 id="parametric-cad-model">Parametric CAD Model</h3>
-<p>Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the following design parameters for each stage:</p>
-<p>Stage inlet and outlet area<br>
-Rotor and stator<br>
-number of blades<br>
-chord<br>
-camber<br>
-angle of attack at base and tip</p>
-<img src="ME407/CFD_Air_Compressor/Air_comp_hand.png" alt="Hand Calculations" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
-<figcaption style="text-align:center;">Initial Hand calcs</figcaption>
-<img src="ME407/CFD_Air_Compressor/CAD_1.png" alt="CAD View 1" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
-<figcaption style="text-align:center;">Axial compressor assembly model in Onshape — Translucent Shroud</figcaption>
-<img src="ME407/CFD_Air_Compressor/CAD_2.png" alt="CAD View 2" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
-<figcaption style="text-align:center;">First Stages CAD detail Translucent Shroud.</figcaption>
-<img src="ME407/CFD_Air_Compressor/CAD_3.png" alt="CAD View 3" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
-<figcaption style="text-align:center;">Cross Section View.</figcaption>
-<img src="ME407/CFD_Air_Compressor/CAD_4.png" alt="CAD View 4" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
-<figcaption style="text-align:center;">Top View.</figcaption>
-<h3 id="simulation">Simulation</h3>
-<p>Mesh<br>
-Stage 1 Mesh<br>
-MeshMesh</p>
-<p>Stage 1 Simulation</p>
-<p>Stage 4 Simulation</p>
 <h3 id="results">Results</h3>
-<p>Achieved total 20 : 1 compression ratio across 17 stages<br>
-Average Stage Efficiency of 82%<br>
-Pressure ratio and efficiency validated against hand calculations<br>
-Turbulence modeling, residual analysis, and mesh-independence verification</p>
-<h4 id="table-1-performance-metrics-for-maximum-operating-altitude">Table 1: Performance metrics for maximum operating altitude</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">40,000 Feet</th>
-<th style="text-align:center">Inlet</th>
-<th style="text-align:center">Outlet</th>
-<th style="text-align:center">Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Ambient Pressure</td>
-<td style="text-align:center">2.7</td>
-<td style="text-align:center">103</td>
-<td style="text-align:center">psi</td>
-</tr>
-<tr>
-<td style="text-align:left">Ambient Temperature</td>
-<td style="text-align:center">-69.7</td>
-<td style="text-align:center">1592</td>
-<td style="text-align:center">F</td>
-</tr>
-</tbody>
-</table>
-<h4 id="table-2-performance-metrics-at-sea-level">Table 2: Performance metrics at sea level</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Sea level</th>
-<th style="text-align:center">Inlet</th>
-<th style="text-align:center">Outlet</th>
-<th style="text-align:center">Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Ambient Pressure</td>
-<td style="text-align:center">14.7</td>
-<td style="text-align:center">223</td>
-<td style="text-align:center">psi</td>
-</tr>
-<tr>
-<td style="text-align:left">Ambient Temperature</td>
-<td style="text-align:center">59.0</td>
-<td style="text-align:center">1253</td>
-<td style="text-align:center">F</td>
-</tr>
-</tbody>
-</table>
-<hr>
+<ul>
+<li>Achieved total 20 : 1 compression ratio across 17 stages</li>
+<li>Average Stage efficiency 82%</li>
+<li>Convergece of Stable flow, Temperature, and  convergence at all operating conditions</li>
+<li>Efficiency validated against analytical predictions</li>
+<li>Turbulence modeling, residual analysis, and mesh verification</li>
+</ul>
+<h3 id="setup-and-simulation-details">Setup and Simulation Details</h3>
+<ul>
+<li>Modeled and simulated in ANSYS Fluent, with each stage analyzed independently.</li>
+<li>Outlet conditions of each stage used as inlet conditions for the next.</li>
+<li>Pressure-based transient solver in double precision with periodic rotor–stator interfaces.</li>
+<li>Mesh: patch-conforming, 0.5 in body sizing, 3 inflation layers (1.2 growth rate), adaptive level 7.</li>
+<li>Max aspect ratio ≈ 10, min element quality ≈ 0.14.</li>
+<li>Operating pressure: 0 psi; inlet total pressure: 2.73 psi; total temperature: –19.9 °F.</li>
+<li>Spool-up sequence:
+<ul>
+<li>1000 rpm, Δt = 1×10⁻⁴ s, 300 steps</li>
+<li>2000 rpm, Δt = 5×10⁻⁵ s, 300 steps</li>
+<li>2500 rpm, Δt = 5×10⁻⁵ s, 960 + 480 steps (steady state)</li>
+</ul>
+</li>
+<li>Achieved good convergence of residuals</li>
+</ul>
 <h3 id="figures">Figures</h3>
 <h4 id="concept-and-geometry">Concept and Geometry</h4>
 <img src="ME407/CFD_Air_Compressor/Air_comp_hand.png" alt="Hand-drawn concept sketch" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
@@ -680,18 +550,18 @@ Turbulence modeling, residual analysis, and mesh-independence verification</p>
 <figcaption style="text-align:center;">Cross Section View</figcaption>
 <img src="ME407/CFD_Air_Compressor/CAD_4.png" alt="CAD View 4" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <figcaption style="text-align:center;">Top View</figcaption>
-<h4 id="stage-1--baseline-flow">Stage 1 — Baseline Flow</h4>
+<h3 id="stage-1">Stage 1</h3>
 <p><video src="ME407/CFD_Air_Compressor/S1_press.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
 <figcaption style="text-align:center;">Stage 1 pressure contour during operation</figcaption>
 <p><video src="ME407/CFD_Air_Compressor/S1_temp.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
 <figcaption style="text-align:center;">Stage 1 temperature during operation</figcaption>
-<p><video src="ME407/CFD_Air_Compressor/S1_stream.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
+<p><video src="ME407/CFD_Air_Compressor/S1_stream.mp4"  autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
 <figcaption style="text-align:center;">Stage 1 velocity streamlines during operation</figcaption>
 <img src="ME407/CFD_Air_Compressor/mesh_aspect.png" alt="Stage 1 Mesh Aspect Ratio" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <figcaption style="text-align:center;">Stage 1 mesh with boundary layer with aspect ratio color gradient</figcaption>
 <img src="ME407/CFD_Air_Compressor/mesheq.png" alt="Stage 1 Mesh Quality" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <figcaption style="text-align:center;">Stage 1 mesh with element quality displayed.</figcaption>
-<h4 id="stage-4--downstream-development">Stage 4 — Downstream Development</h4>
+<h3 id="stage-4">Stage 4</h3>
 <p><video src="ME407/CFD_Air_Compressor/S4_press_anim.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
 <figcaption style="text-align:center;">Stage 4 pressure contour during operation</figcaption>
 <p><video src="ME407/CFD_Air_Compressor/S4_temp_anim.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
@@ -821,11 +691,11 @@ Turbulence modeling, residual analysis, and mesh-independence verification</p>
 </ul>
 <h3 id="setup-and-simulation-details">Setup and Simulation Details</h3>
 <ul>
-<li>Modeled in ANSYS Mechanical (Transient Thermal) using temperature-dependent properties.</li>
+<li>Modeled in <strong>ANSYS Mechanical (Transient Thermal)</strong> using temperature-dependent properties.</li>
 <li>Mesh: ~150k elements, refined around the skewer and cavity interfaces.</li>
 <li>Time step: 5 s, total simulation time ≈ 5400 s.</li>
 <li>Boundary conditions: outer convection, skewer conduction, and layered contact interfaces.</li>
-<li>Gradient-based post-processing performed in MAPDL for burn prediction.</li>
+<li>Gradient-based post-processing performed in <strong>MAPDL</strong> for burn prediction.</li>
 </ul>
 <h3 id="figures">Figures</h3>
 <h4 id="hand-calculations-and-results">Hand Calculations and Results</h4>
@@ -847,14 +717,14 @@ Turbulence modeling, residual analysis, and mesh-independence verification</p>
 <img src="ME408/CAE_Turducken/ME408BoundaryConditionSkewerConduction.png" alt="Skewer Conduction BC" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <img src="ME408/CAE_Turducken/ME408BoundaryConditionTurduckenOutsideConvection.png" alt="Outer Convection BC" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;">
 <h4 id="animation--full-cooking-cycle">Animation — Full Cooking Cycle</h4>
-<p><video src="ME408/CAE_Turducken/ME408TurduckenAnimation.mp4" autoplay loop muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
-<figcaption style="text-align:center;">Full cooking cycle with progressive heating and skewer conduction.</figcaption>
+<p><video src="ME408/CAE_Turducken/ME408TurduckenAnimation.mp4" controls muted playsinline preload="metadata" style="display:block;margin:auto;width:100%;max-width:720px;border-radius:6px;"></video></p>
+<figcaption style="text-align:center;">Transient simulation showing full cooking cycle with progressive heating and skewer conduction.</figcaption>
 <hr>
-<h1 id="contact-me">Contact Me!</h1>
+<h1 id="contact-me">Contact Me</h1>
 <ul>
 <li>Email: <a href="mailto:spencerkirh@gmail.com">spencerkirh@gmail.com</a></li>
 <li>Location: New York, NY</li>
-<li>LinkedIn: <a href="www.linkedin.com/in/spencerkirsch">spencerkirsch</a></li>
+<li>LinkedIn: <em>(Add link when ready)</em></li>
 </ul>
 <hr>
 
